@@ -1,0 +1,25 @@
+http://localhost:8080/api/tickets/price?departure=London&arrival=Boston
+
+insert into cities (name)
+values
+    ('London'), ('Reading'), ('Swindon'),
+    ('Bristol'), ('Birmingham'),
+    ('Coventry'), ('Northampton');
+
+insert into routes
+    (destination_city_id, origin_city_id)
+values
+    (1,2), (2,3), (3,4), (3,5),
+    (4,5), (5,6), (6,7), (7,1);
+
+
+
+insert into segments_to_routes (route_id, segment_id) values
+    (1, 1),
+    (2, 2), (2, 3), (2, 4), (2, 5),
+    (3, 6), (3, 7),
+    (4, 8), (4, 9), (4, 10), (4, 11),
+    (5, 12), (5, 13), (5, 14),
+    (6, 15),
+    (7, 16), (7, 17),
+    (8, 18), (8, 19);
